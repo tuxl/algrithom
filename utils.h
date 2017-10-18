@@ -7,15 +7,15 @@
 
 using namespace std;
 
-class Rander{
+class Random{
     public:
-        Rander(int r);
+        Random(int r);
         int range;
         int genNumber();
         int* genIntArray(int size);
 };
 
-int* Rander::genIntArray(int size)
+int* Random::genIntArray(int size)
 {
     int* data = new int[size];
     for(int i = 0; i < size; i++)
@@ -25,11 +25,11 @@ int* Rander::genIntArray(int size)
     return data;
 }
 
-Rander::Rander(int r):range(r){
+Random::Random(int r):range(r){
     srand((unsigned)time(0));
 }
 
-int Rander::genNumber()
+int Random::genNumber()
 {
     return rand() % range;
 }

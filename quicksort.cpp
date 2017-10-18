@@ -54,7 +54,7 @@ int cmp ( const void *a , const void *b  )
 
 void mysort(int size)
 {
-    Rander dataGenerator(1000000);
+    Random dataGenerator(1000000);
     int * data = dataGenerator.genIntArray(size);
     time_t t_start ;
     time_t t_end;
@@ -68,7 +68,7 @@ void mysort(int size)
 
 void forqsort(int size)
 {
-    Rander dataGenerator(1000000);
+    Random dataGenerator(1000000);
     time_t t_start ;
     time_t t_end;
     int * data = dataGenerator.genIntArray(size);

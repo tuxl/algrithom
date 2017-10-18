@@ -205,7 +205,7 @@ int main(int argc, char* argv[])
     p1.len = 0;
     p1.data = new int[size+1];
     memset(p1.data, 0, sizeof(int)*(size+1));
-    Rander r(100);
+    Random r(100);
     int d[] = {69,75,23,11,9};
     for(int i=1; i<=size; i++)    
     {
